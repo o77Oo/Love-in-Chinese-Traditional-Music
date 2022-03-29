@@ -3,12 +3,9 @@ import axios from "axios";
 import "../App.scss";
 import React from "react";
 import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
-import Main from "../components/Main/Main";
-import Comments from "../components/Comments/Comments";
-import SideBar from "../components/SideBar/SideBar";
 
-class HomePage extends Component {
+
+class Orchestra extends Component {
   state = {
     videos: [],
     selectedVideo: {},
@@ -87,4 +84,4 @@ class HomePage extends Component {
     );
   };
 }
-export default HomePage;
+export default Orchestra;
