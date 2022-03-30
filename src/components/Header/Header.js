@@ -1,6 +1,7 @@
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.jpeg";
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
@@ -13,7 +14,7 @@ function Header() {
           {/* </Link> */}
         </div>
 
-        {/* <ul className="header__nav">
+        <ul className="header__nav">
           <li className="header__item">
             <NavLink
               className="header__link"
@@ -40,10 +41,10 @@ function Header() {
               to="/"
             >
               Music
-            </NavLink> */}
-          {/* </li> */}
+            </NavLink>
+          </li>
           
-        {/* </ul> */}
+        </ul>
       </div>
         </header>
       

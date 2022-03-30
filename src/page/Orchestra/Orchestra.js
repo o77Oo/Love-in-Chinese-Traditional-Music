@@ -1,6 +1,7 @@
 import { Component } from "react";
 import axios from "axios";
 import React from "react";
+import Form from "../../components/Form/Form"
 
 
 
@@ -8,7 +9,8 @@ import React from "react";
 function Orchestra (props) {
   return (
     <div className="main">
-      <div className="main__content">
+       <Form />
+      {/* <div className="main__content">
         <h1 className="main__title">{props.selectedVideo.title}</h1>
         <div className="main__wrap">
             <h2 className="main__instruments">{props.selectedVideo.instruments}</h2>
@@ -18,7 +20,8 @@ function Orchestra (props) {
         </div>
         <p className="main__artist">{props.selectedVideo.artist}</p>
         <p className="main__story">{props.selectedVideo.story}</p>
-      </div>
+      </div> */}
+     
     </div>
   );
 }
