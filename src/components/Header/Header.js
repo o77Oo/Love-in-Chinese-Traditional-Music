@@ -8,12 +8,12 @@ function Header() {
         <header className="header">
             <div className="header__container">
         <div className="header__box">
-          <Link to="/">
+          {/* <Link to="/"> */}
             <img className="header__logo" src={logo} alt="main" />
-          </Link>
+          {/* </Link> */}
         </div>
 
-        <ul className="header__nav">
+        {/* <ul className="header__nav">
           <li className="header__item">
             <NavLink
               className="header__link"
@@ -40,10 +40,10 @@ function Header() {
               to="/"
             >
               Music
-            </NavLink>
-          </li>
+            </NavLink> */}
+          {/* </li> */}
           
-        </ul>
+        {/* </ul> */}
       </div>
         </header>
       
