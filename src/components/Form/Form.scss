@@ -1,0 +1,19 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+// @use "../../styles/partials/typography" as *;
+
+
+.form{
+    &__titlebox{
+        @include display-flex (row, center,center);
+    }
+    &__format{
+    @include display-flex (row, center,center);
+}
+    &__left{
+@include display-flex (column, center,center)
+    }
+    &__right{
+        @include display-flex (column, center,center)
+    }
+}

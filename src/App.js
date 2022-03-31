@@ -4,6 +4,10 @@ import Orchestra from "./page/Orchestra/Orchestra";
 import Education from "./page/Education/Education";
 import { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import WindInstruments from "./page/Orchestra/WindInstruments"
+import BowedStringInstruments from "./page/Orchestra/BowedStringInstruments"
+import PercussionInstruments from "./page/Orchestra/PercussionInstruments"
+import PluckedInstruments from "./page/Orchestra/PluckedInstruments"
 
 
 
@@ -16,6 +20,10 @@ function App() {
             <Route path="/" component={Music} exact />
             <Route path="/videos/:id" component={Music} />
             <Route path="/orchestra" component={Orchestra} />
+            <Route path="/orchestra/wind" component={WindInstruments} />
+            <Route path="/orchestra/bowedstring" component={BowedStringInstruments} />
+            <Route path="/orchestra/percussion" component={PercussionInstruments} />
+            <Route path="/orchestra/pluckedstring" component={PluckedInstruments} />
             <Route path="/education" component={Education} />
           </Switch>
         </div>

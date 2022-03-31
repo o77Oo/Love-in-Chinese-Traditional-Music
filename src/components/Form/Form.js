@@ -4,7 +4,6 @@ import { Component } from "react";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
 
-
 class Form extends Component {
     state = {
         firstName: "",
@@ -25,7 +24,16 @@ class Form extends Component {
     };
 
     isFormValid = () => {
-        if (!this.state.firstName.trim() || !this.state.lastName.trim() || !this.state.email.trim() || !this.state.address.trim() || !this.state.postalCode.trim() || !this.state.phoneNo.trim() || !this.state.comments.trim() || !this.state.interestIn.trim()) {
+        if (
+            !this.state.firstName.trim() ||
+            !this.state.lastName.trim() ||
+            !this.state.email.trim() ||
+            !this.state.address.trim() ||
+            !this.state.postalCode.trim() ||
+            !this.state.phoneNo.trim() ||
+            !this.state.comments.trim() ||
+            !this.state.interestIn.trim()
+        ) {
             return false;
         } else {
             return true;
@@ -36,10 +44,18 @@ class Form extends Component {
         event.preventDefault();
 
         if (this.isFormValid()) {
-
-            //to do add the description values 
+            //to do add the description values
             axios
-                .post(`${process.env.REACT_APP_API_URL}/forms`, { 'firstName': this.state.firstName, 'lastName': this.state.lastName, 'email': this.state.email, 'address': this.state.address, 'postalCode': this.state.postalCode, 'phoneNo': this.state.lastName, 'comments': this.state.comments, 'interestIn': this.state.interestIn })
+                .post(`${process.env.REACT_APP_API_URL}/forms`, {
+                    firstName: this.state.firstName,
+                    lastName: this.state.lastName,
+                    email: this.state.email,
+                    address: this.state.address,
+                    postalCode: this.state.postalCode,
+                    phoneNo: this.state.lastName,
+                    comments: this.state.comments,
+                    interestIn: this.state.interestIn,
+                })
                 .then((response) => {
                     alert("Upload successfully");
                     this.setState({ formSubmited: true });
@@ -60,89 +76,93 @@ class Form extends Component {
             return <Redirect to="/" />;
         }
         return (
-
             <div className="form__wrap">
-                <div className="form__box">
+                <div className="form__titlebox">
                     <h2 className="form__subtitle">resquest</h2>
-                    <h2 className="form__subtitle1">more</h2>
-                    <h2 className="form__subtitle2">Information</h2>
-                    <h3 className="form__subtitle3">Required fields are indicated by an asterisk.</h3>
-                </div>
+                    <h2 className="form__subtitle1"> more</h2>
+                    <h2 className="form__subtitle2"> Information</h2>
+                    </div>
+                    <h3 className="form__subtitle3">
+                        Required fields are indicated by an asterisk.
+                    </h3>
+                
                 <form className="form__format" onSubmit={this.handleSubmit}>
+                    <div className="form__left">
+                        <input
+                            id="title"
+                            className="form__title"
+                            type="text"
+                            name="title"
+                            placeholder="*FIRST NAME"
+                            onChange={this.handleChange}
+                        />
 
-                    <input
-                        id="title"
-                        className="form__title"
-                        type="text"
-                        name="title"
-                        placeholder="*FIRST NAME"
-                        onChange={this.handleChange}
-                    />
-
-                    <input
-                        id="title"
-                        className="form__title"
-                        type="text"
-                        name="title"
-                        placeholder="*LAST NAME"
-                        onChange={this.handleChange}
-                    />
-                    <input
-                        id="title"
-                        className="form__title"
-                        type="text"
-                        name="title"
-                        placeholder="*EMAIL"
-                        onChange={this.handleChange}
-                    />
-                    <input
-                        id="title"
-                        className="form__title"
-                        type="text"
-                        name="title"
-                        placeholder="ADDRESS"
-                        onChange={this.handleChange}
-                    />
-                    <input
-                        id="title"
-                        className="form__title"
-                        type="text"
-                        name="title"
-                        placeholder="POSTAL CODE"
-                        onChange={this.handleChange}
-                    />
-                    <input
-                        id="title"
-                        className="form__title"
-                        type="text"
-                        name="title"
-                        placeholder="PHONE NUMBER"
-                        onChange={this.handleChange}
-                    />
-                    <input
-                        id="title"
-                        className="form__title"
-                        type="text"
-                        name="title"
-                        placeholder="COMMENTS"
-                        onChange={this.handleChange}
-                    />
-                    <input
-                        id="title"
-                        className="form__title"
-                        type="text"
-                        name="title"
-                        placeholder="INTERESTED IN"
-                        onChange={this.handleChange}
-                    />
-
+                        <input
+                            id="title"
+                            className="form__title"
+                            type="text"
+                            name="title"
+                            placeholder="*LAST NAME"
+                            onChange={this.handleChange}
+                        />
+                        <input
+                            id="title"
+                            className="form__title"
+                            type="text"
+                            name="title"
+                            placeholder="*EMAIL"
+                            onChange={this.handleChange}
+                        />
+                        <input
+                            id="title"
+                            className="form__title"
+                            type="text"
+                            name="title"
+                            placeholder="ADDRESS"
+                            onChange={this.handleChange}
+                        />
+                    </div>
+                    <div className="form__right">
+                        <input
+                            id="title"
+                            className="form__title"
+                            type="text"
+                            name="title"
+                            placeholder="POSTAL CODE"
+                            onChange={this.handleChange}
+                        />
+                        <input
+                            id="title"
+                            className="form__title"
+                            type="text"
+                            name="title"
+                            placeholder="PHONE NUMBER"
+                            onChange={this.handleChange}
+                        />
+                        <input
+                            id="title"
+                            className="form__title"
+                            type="text"
+                            name="title"
+                            placeholder="*INSTRUMENT"
+                            onChange={this.handleChange}
+                        />
+                        <input
+                            id="title"
+                            className="form__title"
+                            type="text"
+                            name="title"
+                            placeholder="COMMENT"
+                            onChange={this.handleChange}
+                        />
+                    </div>
                     <div className="form__box">
                         <button className="form__button" type="submit">
                             SUBMIT
                         </button>
                     </div>
                 </form>
-            </div >
+            </div>
         );
     }
 }

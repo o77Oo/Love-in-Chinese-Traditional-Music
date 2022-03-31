@@ -1,6 +1,7 @@
 import { Component } from "react";
 import axios from "axios";
 import React from "react";
+import "./Music.scss";
 import Header from "../../components/Header/Header";
 import Comments from "../../components/Comments/Comments";
 import SideBar from "../../components/SideBar/SideBar";
@@ -69,9 +70,10 @@ class Music extends Component {
     return (
       <>
         <Header />
-        <Hero selectedVideo={this.state.selectedVideo} />
+      
         <div className="wrap">
           <div className="wrap__left">
+          <Hero selectedVideo={this.state.selectedVideo} />
             <Main selectedVideo={this.state.selectedVideo} />
             <Comments selectedVideo={this.state.selectedVideo} />
           </div>

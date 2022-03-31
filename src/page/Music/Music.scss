@@ -1,0 +1,28 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.wrap {
+    @include desktop {
+      width: 100%;
+      @include display-flex(row, left, center);
+    }
+  
+    &__left {
+      @include desktop {
+        width: 70%;
+        margin-left: 2rem;
+      }
+    }
+    &__right {
+      @include tablet {
+        margin-left: 1rem;
+        width: 30%;
+      }
+      @include desktop {
+        border-left: 2px solid $border;
+        margin-right: 1rem;
+        margin-left: 0;
+      }
+    }
+  }
+  
