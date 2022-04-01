@@ -7,7 +7,7 @@ const MenuItems = ({ items }) => {
     <li className="menu-items">
       {items.submenu ? (
         <>
-          <button type="button" aria-haspopup="menu">
+          <button type="button" >
             {items.title}{" "}
           </button>
           <Dropdown submenus={items.submenu} />
@@ -18,7 +18,7 @@ const MenuItems = ({ items }) => {
           role="button"
           className="menu__link"
           activeClassName="menu__link--active"
-          to="/#"
+          to={items.path}
           exact
         >
           {items.title}

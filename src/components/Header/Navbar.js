@@ -8,8 +8,7 @@ const Navbar = () => {
     
       <ul className="menu">
       {menuItems.map((menu, index) => {
-     return 
-        <MenuItems items={menu} key={index} />;
+     return <MenuItems items={menu} key={index} />;
  
     })}
 

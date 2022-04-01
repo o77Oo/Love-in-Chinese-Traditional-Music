@@ -3,6 +3,7 @@
 export const menuItems = [
     {
      title: "About Us",
+     path: "/about",
      submenu: [
         {
          title: "Our Story"
@@ -11,9 +12,11 @@ export const menuItems = [
     },
     {
      title: "Orchestra",
+     path: "/orchestra",
      submenu: [
         {
          title: "Wind Instruments"
+      
         },
         {
          title: "Bowed String",
@@ -28,6 +31,7 @@ export const menuItems = [
     },
     {
      title: "Music & Love",
+     path: "/music",
      submenu: [
         {
          title: "Music Appreciation"
@@ -37,6 +41,7 @@ export const menuItems = [
     },
     {
     title: "Education",
+    path: "/education",
     submenu: [
         {
          title: "Find a Teacher"
@@ -45,6 +50,7 @@ export const menuItems = [
     },
     {
     title: "Contact Us",
+    path: "/contact",
     submenu: [
         {
          title: "Career"

@@ -73,11 +73,11 @@ class Music extends Component {
 
   console.log(id)
   const name = event.target.name.value
-  const message = event.target.message.value
+  const comment = event.target.comment.value
   // check if name and message inputs have a value
-  if (name && message) {
+  if (name && comment) {
     axios
-      .post(`${process.env.REACT_APP_API_URL}/videos/${id}`, { name: name, comment: message })
+      .post(`${process.env.REACT_APP_API_URL}/videos/${id}`, { name: name, comment: comment })
       .then((result) => {
         this.getVideosById(id)
       })
