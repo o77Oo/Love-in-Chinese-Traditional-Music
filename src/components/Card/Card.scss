@@ -4,12 +4,34 @@
 .cards {
     // margin: 4rem 2rem;
     
-    
+    &__box {
+      @include display-flex (column, center, center);
+     
+    }
     
     &__container{
       padding: 36px 20px;
       display: flex;
-      flex-direction: column;
+      flex-direction:row;
+      gap: 50px;
+  
+  
+      @include tablet {
+      padding: 36px 36px;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+  
+      }
+      @include desktop {
+        margin: 0 auto;
+  
+      }
+    }
+    &__container1{
+      padding: 36px 20px;
+      display: flex;
+      flex-direction: row;
       gap: 50px;
   
   
@@ -26,12 +48,9 @@
       }
     }
     &__wrapper {
-      display: flex;
-      flex-direction: column;
-    //   color: $primary-text;
-      gap: 16px;
-      justify-content: space-evenly;
-      align-items: flex-start;
+     
+     @include display-flex (column, space-evenly, flex-start);
+     
       // margin: 12px 16px;
       padding: 16px;
       margin: 0 auto;
@@ -65,25 +84,6 @@
     align-items: flex-start;
     
   }
-  &__title{
-    font-size: 28px;
-    margin-bottom: 5px;
-  }
   
-  &__year{
-    font-size: 16px;
-    margin-bottom: 5px;
-  
-  }
-  &__genre{
-    font-size: 16px;
-    margin-bottom: 5px;
-  
-  }
-  &__plot{
-    font-size: 18px;
-    margin-bottom: 5px;
-  
-  }
   }
   

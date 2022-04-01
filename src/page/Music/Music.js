@@ -55,10 +55,12 @@ class Music extends Component {
     axios
       .get(`${process.env.REACT_APP_API_URL}/videos/${id}`)
       .then((response) => {
+
+        console.log(response)
         this.setState({
           selectedVideo: response.data, //set array of videos
         });
-        this.getVideosById(response.data[0].id);
+       
       })
 
       .catch((error) => {
@@ -66,26 +68,51 @@ class Music extends Component {
       });
   }
 
-  render = () => {
-    return (
-      <>
-        <Header />
-      
-        <div className="wrap">
-          <div className="wrap__left">
+  createComment=(event,id) => {
+  event.preventDefault();
+
+  console.log(id)
+  const name = event.target.name.value
+  const message = event.target.message.value
+  // check if name and message inputs have a value
+  if (name && message) {
+    axios
+      .post(`${process.env.REACT_APP_API_URL}/videos/${id}`, { name: name, comment: message })
+      .then((result) => {
+        this.getVideosById(id)
+      })
+    // reset the form inputs
+    event.target.reset();
+  } else {
+    // if no values are set for the input fields
+    alert("please enter a name and comment");
+  }
+}
+
+
+
+
+
+render = () => {
+  return (
+    <>
+      <Header />
+
+      <div className="wrap">
+        <div className="wrap__left">
           <Hero selectedVideo={this.state.selectedVideo} />
-            <Main selectedVideo={this.state.selectedVideo} />
-            <Comments selectedVideo={this.state.selectedVideo} />
-          </div>
-          <div className="wrap__right">
-            <SideBar
-              videos={this.state.videos}
-              selectedVideo={this.state.selectedVideo}
-            />
-          </div>
+          <Main selectedVideo={this.state.selectedVideo} />
+          <Comments selectedVideo={this.state.selectedVideo} createComment={this.createComment}/>
         </div>
-      </>
-    );
-  };
+        <div className="wrap__right">
+          <SideBar
+            videos={this.state.videos}
+            selectedVideo={this.state.selectedVideo}
+          />
+        </div>
+      </div>
+    </>
+  );
+};
 }
 export default Music;

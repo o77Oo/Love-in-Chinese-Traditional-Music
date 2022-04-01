@@ -9,7 +9,8 @@ function Card() {
     return (
         <>
         <Header />
-      <div className="card__container">
+        <div className="cards__box">
+      <div className="cards__container">
            <div class="cards__wrapper">
           <img
             class="cards__img"
@@ -26,6 +27,8 @@ function Card() {
           />
          
         </div> 
+        </div>
+        <div className="cards__container1">
          <div class="cards__wrapper">
           <img
             class="cards__img"
@@ -42,6 +45,7 @@ function Card() {
           />
           
         </div> 
+      </div>
       </div>
       </>
     );

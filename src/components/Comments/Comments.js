@@ -3,6 +3,7 @@ import "./Comments.scss";
 
 
 function Comments(props) {
+ 
   return (
     <>
       <div className="comments">
@@ -17,7 +18,12 @@ function Comments(props) {
             /> */}
           </div>
 
-          <form className="form">
+          <form className="form" onSubmit={(event)=>{props.createComment(event,props.selectedVideo.id)}}>
+          <input
+              className="form__comment"
+              name="name"
+              placeholder="  Add your name"
+           />
             <textarea
               className="form__comment"
               name="comment"
