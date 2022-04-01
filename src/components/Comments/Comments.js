@@ -30,7 +30,7 @@ function Comments(props) {
               placeholder="  Add your comment"
             ></textarea>
             <button type="submit" className="form__button" alt="plus">
-              {/* <img className="form__button--img" src={logo} alt="form-plus" /> */}
+              
               COMMENT
             </button>
           </form>

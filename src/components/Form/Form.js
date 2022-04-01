@@ -6,14 +6,14 @@ import axios from "axios";
 
 class Form extends Component {
     state = {
-        firstName: "",
-        lastName: "",
+        firstname: "",
+        lastname: "",
         email: "",
         address: "",
-        postalCode: "",
-        phoneNo: "",
+        postalcode: "",
+        phoneno: "",
         comments: "",
-        interestIn: "",
+        province: "",
         formSubmited: false,
     };
 
@@ -25,14 +25,14 @@ class Form extends Component {
 
     isFormValid = () => {
         if (
-            !this.state.firstName.trim() ||
-            !this.state.lastName.trim() ||
+            !this.state.firstname.trim() ||
+            !this.state.lastname.trim() ||
             !this.state.email.trim() ||
             !this.state.address.trim() ||
-            !this.state.postalCode.trim() ||
-            !this.state.phoneNo.trim() ||
+            !this.state.postalcode.trim() ||
+            !this.state.phoneno.trim() ||
             !this.state.comments.trim() ||
-            !this.state.interestIn.trim()
+            !this.state.province.trim()
         ) {
             return false;
         } else {
@@ -46,15 +46,15 @@ class Form extends Component {
         if (this.isFormValid()) {
             //to do add the description values
             axios
-                .post(`${process.env.REACT_APP_API_URL}/forms`, {
-                    firstName: this.state.firstName,
-                    lastName: this.state.lastName,
+                .post(`${process.env.REACT_APP_API_URL}/customer`, {
+                    firstname: this.state.firstname,
+                    lastname: this.state.lastname,
                     email: this.state.email,
                     address: this.state.address,
-                    postalCode: this.state.postalCode,
-                    phoneNo: this.state.lastName,
+                    postalcode: this.state.postalcode,
+                    phoneno: this.state.phoneno,
                     comments: this.state.comments,
-                    interestIn: this.state.interestIn,
+                    province: this.state.province,
                 })
                 .then((response) => {
                     alert("Upload successfully");
@@ -92,7 +92,7 @@ class Form extends Component {
                             id="title"
                             className="form__title"
                             type="text"
-                            name="title"
+                            name="firstname"
                             placeholder="*FIRST NAME"
                             onChange={this.handleChange}
                         />
@@ -101,7 +101,7 @@ class Form extends Component {
                             id="title"
                             className="form__title"
                             type="text"
-                            name="title"
+                            name="lastname"
                             placeholder="*LAST NAME"
                             onChange={this.handleChange}
                         />
@@ -109,7 +109,7 @@ class Form extends Component {
                             id="title"
                             className="form__title"
                             type="text"
-                            name="title"
+                            name="email"
                             placeholder="*EMAIL"
                             onChange={this.handleChange}
                         />
@@ -117,7 +117,7 @@ class Form extends Component {
                             id="title"
                             className="form__title"
                             type="text"
-                            name="title"
+                            name="address"
                             placeholder="ADDRESS"
                             onChange={this.handleChange}
                         />
@@ -127,7 +127,7 @@ class Form extends Component {
                             id="title"
                             className="form__title"
                             type="text"
-                            name="title"
+                            name="postalcode"
                             placeholder="POSTAL CODE"
                             onChange={this.handleChange}
                         />
@@ -135,7 +135,7 @@ class Form extends Component {
                             id="title"
                             className="form__title"
                             type="text"
-                            name="title"
+                            name="phoneno"
                             placeholder="PHONE NUMBER"
                             onChange={this.handleChange}
                         />
@@ -143,16 +143,16 @@ class Form extends Component {
                             id="title"
                             className="form__title"
                             type="text"
-                            name="title"
-                            placeholder="*INSTRUMENT"
+                            name="province"
+                            placeholder="*PROVINCE"
                             onChange={this.handleChange}
                         />
                         <input
                             id="title"
                             className="form__title"
                             type="text"
-                            name="title"
-                            placeholder="COMMENT"
+                            name="comments"
+                            placeholder="COMMENTS"
                             onChange={this.handleChange}
                         />
                     </div>

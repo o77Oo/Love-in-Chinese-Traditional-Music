@@ -11,17 +11,17 @@ function Card() {
         <Header />
         <div className="cards__box">
       <div className="cards__container">
-           <div class="cards__wrapper">
+           <div className="cards__wrapper">
           <img
-            class="cards__img"
+            className="cards__img"
             src={Wind}
             alt="instrument"
           />
          
         </div> 
-  <div class="cards__wrapper">
+  <div className="cards__wrapper">
           <img
-            class="cards__img"
+            className="cards__img"
             src={BowedString}
             alt="instrument"
           />
@@ -29,17 +29,17 @@ function Card() {
         </div> 
         </div>
         <div className="cards__container1">
-         <div class="cards__wrapper">
+         <div className="cards__wrapper">
           <img
-            class="cards__img"
+            className="cards__img"
             src={Percussion}
             alt="instrument"
           />
          
         </div> 
-        <div class="cards__wrapper">
+        <div className="cards__wrapper">
           <img
-            class="cards__img"
+            className="cards__img"
             src={PluckedString}
             alt="instrument"
           />

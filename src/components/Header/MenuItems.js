@@ -1,21 +1,24 @@
 import { NavLink } from "react-router-dom";
-
+import { useState } from "react";
 import Dropdown from "./Dropdown";
 
 const MenuItems = ({ items }) => {
+  const [dropdown, setDropdown] = useState(false);
   return (
     <li className="menu-items">
       {items.submenu ? (
-        <>
-          <button type="button" >
+        <span onMouseLeave={() => setDropdown(false)}
+        onMouseEnter={() => setDropdown(true)}>
+          <NavLink to={items.path} aria-expanded={dropdown ? "true" : "false"}
+     >
             {items.title}{" "}
-          </button>
-          <Dropdown submenus={items.submenu} />
-        </>
+          </NavLink>
+          <Dropdown submenus={items.submenu} dropdown={dropdown} />
+        </span>
       ) : (
-        // <a href="/#">{items.title}</a>
+     
         <NavLink
-          role="button"
+
           className="menu__link"
           activeClassName="menu__link--active"
           to={items.path}

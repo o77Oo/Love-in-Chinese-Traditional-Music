@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
 
 
-const Dropdown = ({ submenus }) => {
+const Dropdown = ({ submenus, dropdown }) => {
+   
     return (
-     <ul className="dropdown">
+     <ul className={`dropdown ${!dropdown ? "hide" : ""}`}>
       {submenus.map((submenu, index) => (
        <li key={index} className="menu-items">
-        <a href="/#">{submenu.title}</a>
+        <Link to={submenu.path}>{submenu.title}</Link>
        </li>
       ))}
      </ul>
