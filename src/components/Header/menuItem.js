@@ -19,7 +19,7 @@ export const menuItems = [
       },
       {
         title: "Bowed String",
-        path: "/orchestra/bowed",
+        path: "/orchestra/bowedstring",
       },
       {
         title: "Percussion",
@@ -27,7 +27,7 @@ export const menuItems = [
       },
       {
         title: "Plucked String",
-        path: "/orchestra/plucked",
+        path: "/orchestra/pluckedstring",
       },
     ],
   },

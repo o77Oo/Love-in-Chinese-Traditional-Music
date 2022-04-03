@@ -5,9 +5,9 @@ import Dropdown from "./Dropdown";
 const MenuItems = ({ items }) => {
   const [dropdown, setDropdown] = useState(false);
   return (
-    <li className="menu-items">
+    <li className="menu__items">
       {items.submenu ? (
-        <span onMouseLeave={() => setDropdown(false)}
+        <span className="dropbtn" onMouseLeave={() => setDropdown(false)}
         onMouseEnter={() => setDropdown(true)}>
           <NavLink to={items.path} aria-expanded={dropdown ? "true" : "false"}
      >

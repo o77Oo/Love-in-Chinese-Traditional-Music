@@ -19,7 +19,7 @@ function App() {
           <Switch>
             <Route path="/" component={Music} exact />
             <Route path="/videos/:id" component={Music} />
-            <Route path="/orchestra" component={Orchestra} />
+            <Route path="/orchestra" component={Orchestra} exact/>
             <Route path="/orchestra/wind" component={WindInstruments} />
             <Route path="/orchestra/bowedstring" component={BowedStringInstruments} />
             <Route path="/orchestra/percussion" component={PercussionInstruments} />
