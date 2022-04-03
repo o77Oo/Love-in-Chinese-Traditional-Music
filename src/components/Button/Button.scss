@@ -1,22 +1,24 @@
 
 
 .button {
-    padding: 15px 25px;
-    font-size: 24px;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 1.5em;
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: #fff;
-    background-color: #04AA6D;
+    // color: #fff;
+    background-color: #f4f4f4;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    // box-shadow: 0 9px #999;
+    text-decoration: none;
   }
   
-  .button:hover {background-color: #3e8e41}
+  .button:hover {background-color: #7e8a97}
   
-  .button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+  // .button:active {
+    // background-color: #3e8e41;
+    // box-shadow: 0 5px #666;
+  //   transform: translateY(4px);
+  // }

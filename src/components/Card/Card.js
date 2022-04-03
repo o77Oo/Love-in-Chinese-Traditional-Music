@@ -14,14 +14,14 @@ function Card() {
 
         <div className="cards__container">
           <div className="cards__wrapper">
-            <h2 className="card__title">Wind Instruments</h2>
+            <h2 className="card__title">WIND </h2>
             <img className="cards__img" src={Wind} alt="instrument" />
             <Link to="/orchestra/wind">
             <Button />
             </Link>
           </div>
           <div className="cards__wrapper">
-            <h2 className="card__title">BowedString Instruments</h2>
+            <h2 className="card__title">BOWEDSTRING </h2>
             <img className="cards__img" src={BowedString} alt="instrument" />
             <Link to="/orchestra/bowedstring">
             <Button />
@@ -30,14 +30,14 @@ function Card() {
         </div>
         <div className="cards__container1">
           <div className="cards__wrapper">
-            <h2 className="card__title">Percussion</h2>
+            <h2 className="card__title">PERCUSSION </h2>
             <img className="cards__img" src={Percussion} alt="instrument" />
             <Link to="/orchestra/percussion">
             <Button />
             </Link>
           </div>
           <div className="cards__wrapper">
-            <h2 className="card__title">PluckedString Instruments</h2>
+            <h2 className="card__title">PLUCKEDSTRING </h2>
             <img className="cards__img" src={PluckedString} alt="instrument" />
             <Link to="/orchestra/pluckedstring">
             <Button />

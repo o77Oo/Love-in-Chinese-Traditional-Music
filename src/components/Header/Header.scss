@@ -10,10 +10,15 @@
   display: none;
 }
 .header {
+ 
   &__container {
+    
     @include display-flex(column, center, center);
   }
   &__box {
+    font-weight: 700;
+    font-size: 2rem;
+    color:#323232;
     @include display-flex(column, center, center);
   }
 }
