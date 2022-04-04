@@ -10,7 +10,7 @@ import Plucked5 from "../../assets/images/5.jpeg";
 import Plucked6 from "../../assets/images/6.jpeg";
 import Plucked7 from "../../assets/images/7.jpeg";
 import Plucked8 from "../../assets/images/8.jpeg";
-
+import Form from "../../components/Form/Form";
 function PluckedInstruments() {
   return (
     <>
@@ -91,6 +91,7 @@ function PluckedInstruments() {
           <img className="image__plucked" src={Plucked6} alt="plucked6"></img>
         
         </div>
+        <Form />
     </>
   );
 }

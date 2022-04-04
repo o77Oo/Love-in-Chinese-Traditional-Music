@@ -9,6 +9,7 @@ import Bowed4 from "../../assets//images/B4.jpeg"
 import Bowed5 from "../../assets//images/B5.jpeg"
 import Bowed6 from "../../assets//images/B6.jpeg"
 import Bowed7 from "../../assets//images/B7.jpeg"
+import Form from "../../components/Form/Form";
 
 function BowedSringInstruments() {
   return (
@@ -38,6 +39,7 @@ function BowedSringInstruments() {
 
     
       </div>
+      <Form />
 </>
   );
 }

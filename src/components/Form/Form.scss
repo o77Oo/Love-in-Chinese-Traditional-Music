@@ -4,6 +4,9 @@
 
 
 .form{
+   &__wrap{
+    background-color: #ffeee7;
+   }
     &__titlebox{
         @include display-flex (row, center,center);
     }

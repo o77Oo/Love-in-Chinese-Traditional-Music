@@ -3,10 +3,12 @@ import Header from "../../components/Header/Header";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.jpeg";
 import Button from "../../components/Button/Button";
-
+import Form from "../../components/Form/Form";
 function WindInstruments() {
   return (
-<Header />
+    <><Header /><Form /></>
+
+
   );
 }
 
