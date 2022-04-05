@@ -1,30 +1,35 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
-// @use "../../styles/partials/typography" as *;
 
-
-.form{
-   &__wrap{
+.form {
+  &__wrap {
     background-color: #fcf5f5;
-    @include display-flex (column, center,center)
-   }
-    &__titlebox{
-        @include display-flex (row, center,center);
-        font-size: 1.5rem;
-        padding-top: 3rem;
-        padding-bottom: 1.2rem;
-    }
-    &__format{
-    @include display-flex (row, center,center);
-}
-    &__left{
-@include display-flex (column, center,center)
-    }
-    &__right{
-        @include display-flex (column, center,center)
-    }
-    &__format {
-        margin-top: 1.5rem;
-        margin-bottom: 3rem;
-    }
+    @include display-flex(column, center, center);
+  }
+  &__titlebox {
+    @include display-flex(row, center, center);
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 1.2rem;
+  }
+  &__title {
+    width: 15rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-color: #c5afaf;
+  }
+  &__format {
+    @include display-flex(row, center, center);
+  }
+  &__left {
+    @include display-flex(column, center, center);
+  }
+  &__right {
+    @include display-flex(column, center, center);
+  }
+  &__format {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
 }
