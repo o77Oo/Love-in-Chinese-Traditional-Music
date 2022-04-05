@@ -14,8 +14,9 @@ export const menuItems = [
     path: "/orchestra",
     submenu: [
       {
-        title: "Wind Instruments",
-        path: "/orchestra/wind",
+        title: "Plucked String",
+        path: "/orchestra/pluckedstring",
+        
       },
       {
         title: "Bowed String",
@@ -26,8 +27,8 @@ export const menuItems = [
         path: "/orchestra/percussion",
       },
       {
-        title: "Plucked String",
-        path: "/orchestra/pluckedstring",
+        title: "Wind Instruments",
+        path: "/orchestra/wind",
       },
     ],
   },

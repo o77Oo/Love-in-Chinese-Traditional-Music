@@ -6,6 +6,7 @@ import Card from "../../components/Card/Card";
 import HeroE from "../../components/Eduhero/Eduhero";
 import Header from "../../components/Header/Header";
 import "./Education.scss";
+import Font from "react-font";
 
 function Education() {
   return (
@@ -13,6 +14,7 @@ function Education() {
       <Header />
 
       <HeroE />
+      <Font family="Dosis">
       <section className="education__main">
       <h2 className="education__title">ONLINE TEACHER RECOMMENDATIONS </h2>
       <p className="education__content">
@@ -25,6 +27,7 @@ function Education() {
         you with a high quality, trusted teacher that meets your needs.
       </p>
       </section>
+      </Font>
       <Form />
     </div>
   );

@@ -13,7 +13,7 @@ const MenuItems = ({ items }) => {
      >
             {items.title}{" "}
           </NavLink>
-          <Dropdown submenus={items.submenu} dropdown={dropdown} />
+          <Dropdown className="dropbtn__item" submenus={items.submenu} dropdown={dropdown} />
         </span>
       ) : (
      

@@ -76,6 +76,7 @@
     height:30rem;
     object-fit: fit;
     border-radius: 20px;
+    margin-bottom: 16px;
   
   }
   &__text-wrapper {
@@ -84,6 +85,12 @@
     justify-content: space-between;
     align-items: flex-start;
     
+  }
+  &__title{
+    font-size: 1.1rem;
+    padding-bottom: 16px;
+    font-weight: 700;
+   
   }
   
   }

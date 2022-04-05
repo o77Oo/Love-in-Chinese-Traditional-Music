@@ -1,0 +1,187 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.comments {
+    margin: 20px 32px;
+    @include tablet {
+      margin-right: 3rem;
+    }
+    @include desktop {
+      margin-right: 0;
+    }
+    &__title {
+      font-size: 16px;
+      font-weight: 600;
+      @include tablet {
+        margin-left: 3rem;
+        margin-top: 60px;
+      }
+      @include desktop {
+        margin-left: 10rem;
+      }
+    }
+  
+    &__comment {
+      font-size: 14px;
+      color: #afafaf;
+      font-weight: 600;
+      margin: 24px 0 8px 0;
+      
+    }
+  
+    &__container {
+      max-width: 100%;
+      margin-top: 30px;
+      padding-top: 8px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-left: 5rem;
+      border-bottom: 2px solid #e1e1e1;
+      @include tablet {
+        margin-left: 3rem;
+      }
+      @include desktop {
+        margin-left: 10rem;
+      }
+    }
+    &__image {
+      object-fit: cover;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: -5rem;
+      background-color: lightgrey;
+      border-radius: 50%;
+      margin-top: 16px;
+      @include tablet {
+        left: 0.1rem;
+        bottom: 1rem;
+      }
+    }
+    &__wrap1 {
+      width: 100%;
+    }
+    &__content {
+      position: relative;
+      padding-left: 50px;
+      border-bottom: 2px solid $border;
+      @include tablet {
+        margin-left: 3rem;
+      }
+      @include desktop {
+        margin-left: 10rem;
+      }
+      &::before {
+        content: "  ";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: -10px;
+        background-color: lightgrey;
+        border-radius: 50%;
+      }
+    }
+  }
+  .form {
+    @include tablet {
+      @include display-flex(row, center, center);
+      gap: 32px;
+    }
+    @include desktop {
+      @include display-flex(row, center, center);
+      gap: 32px;
+    }
+  
+    &__name {
+      color: $secondary-color;
+      font-size: 16px;
+    }
+    &__comment {
+      font-size: 16px;
+      width: 100%;
+      height: 130px;
+      border-color: $border;
+      background-color: $form-background;
+      border-radius: 8px;
+    //   font-family: "AvenirNext LT Pro";
+      margin-top: 16px;
+      color: $primary-color;
+      padding-top: 8px;
+      padding-left: 8px;
+      @include tablet {
+        height: 45px;
+        margin-left: 4rem;
+        padding-bottom: 16px;
+      }
+      @include desktop {
+        height: 45px;
+        width: 30rem;
+        margin-bottom: 8px;
+      }
+    }
+    &__button {
+      @include display-flex(row, left, left);
+      font-size: 20px;
+      background-color: $CTA-color;
+      color: $primary-color;
+      height: 55px;
+      width: 100%;
+      border-radius: 4px;
+      border-color: $CTA-color;
+      padding: 24px 8rem 20px 16px;
+      margin: 24px 0;
+  
+      &:hover {
+        background-color: $CTA-hover;
+      }
+      @include tablet {
+        margin-bottom: 16px;
+        font-size: 12px;
+        height: 45px;
+        width: 12rem;
+        padding: 0 32px;
+      }
+      @include desktop {
+        margin-bottom: 16px;
+        font-size: 12px;
+        width: 150px;
+        padding: 0 32px;
+        margin-right: 24px;
+      }
+    }
+  }
+  .comments {
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      margin-top: 16px;
+      @include display-flex(column, left, left);
+    }
+    &__name {
+      font-weight: 600;
+    }
+    &__timestamp {
+      color: #afafaf;
+    }
+  
+    &__comment {
+      font-weight: 500;
+      line-height: 24px;
+      color: $primary-color;
+      @include tablet {
+        font-size: 14px;
+      }
+    }
+    &__wrap1 {
+      @include display-flex(row, space-between, center);
+    }
+  
+    &__content {
+      @include desktop {
+        margin-right: 24px;
+      }
+    }
+  }
+  

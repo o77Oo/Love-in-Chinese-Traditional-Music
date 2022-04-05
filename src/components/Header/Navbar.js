@@ -1,14 +1,17 @@
 import { menuItems } from "./menuItem";
 import MenuItems from "./MenuItems";
+import Font, {Text} from 'react-font';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
+    <Font family='Bebas Neue'>
       <ul className="menu">
         {menuItems.map((menu, index) => {
           return <MenuItems items={menu} key={index} />;
         })}
       </ul>
+      </Font>
     </nav>
   );
 };

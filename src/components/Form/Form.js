@@ -3,6 +3,8 @@ import React from "react";
 import { Component } from "react";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
+import Font, {Text} from 'react-font';
+
 
 class Form extends Component {
   state = {
@@ -77,15 +79,21 @@ class Form extends Component {
     }
     return (
       <div className="form__wrap">
+        <Font family='Bebas Neue'>
         <div className="form__titlebox">
           <h2 className="form__subtitle">resquest</h2>
           <h2 className="form__subtitle1"> more</h2>
           <h2 className="form__subtitle2"> Information</h2>
+          
         </div>
+        </Font>
+        <Font family="Courgette">
+        <div className="from__wrap1">
         <h3 className="form__subtitle3">
           Required fields are indicated by an asterisk.
         </h3>
-
+        </div>
+        </Font>
         <form className="form__format" onSubmit={this.handleSubmit}>
           <div className="form__left">
             <input
@@ -141,7 +149,7 @@ class Form extends Component {
             />
             <select
               className="form__title"
-              name="provincey"
+              name="province"
               id="Province"
               onChange={this.handleChange}
             >

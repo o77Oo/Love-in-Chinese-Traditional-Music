@@ -28,4 +28,13 @@
     width: 60%;
     margin-left: 20%;
   }
+  &__title{
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  &__content{
+    line-height: 36px !important;
+    margin-bottom: 3rem;
+  }
 }

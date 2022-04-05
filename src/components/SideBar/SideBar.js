@@ -1,5 +1,6 @@
 import "./SideBar.scss";
 import { Link } from "react-router-dom";
+import Font from "react-font";
 
 function SideBar(props) {
   return (
@@ -18,11 +19,12 @@ function SideBar(props) {
                   alt={element.name}
                 />
               </div>
-
+<Font family="PT Sans Narrow">
               <div className="sidebar__content">
                 <h3 className="sidebar__title1">{element.title}</h3>
                 <p className="sidebar__instruments">{element.instruments}</p>
               </div>
+              </Font>
             </Link>
           </div>
         ))}

@@ -1,16 +1,20 @@
 import "./Eduhero.scss";
 import React from "react";
-import Banner from "../../assets/images/banner.jpg"
+import Font, {Text} from 'react-font';
 
 function Eduhero() {
   return (
-    <div className="hero">
-      <div className="hero__container">
-        <h2 className="hero__title">
+    <div className="front">
+      <div className="front__container">
+      <Font family='Source Code Pro'>
+        <h2 className="front__title">
           ZI DE STUDIO
         </h2>
-       <h1 className="hero__header" >ALL INSTRUMENTS TEACHER RECOMMENDATIONS</h1>
-       <button />
+        </Font>
+        <Font family='Bebas Neue'>
+       <h1 className="front__header" >LEARNING RECOMMENDATIONS</h1>
+      </Font>
+       <button className="front__button"> GET A RECOMMENDATION</button>
        
       </div>
     </div>

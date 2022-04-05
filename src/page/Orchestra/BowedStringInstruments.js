@@ -10,11 +10,13 @@ import Bowed5 from "../../assets//images/B5.jpeg"
 import Bowed6 from "../../assets//images/B6.jpeg"
 import Bowed7 from "../../assets//images/B7.jpeg"
 import Form from "../../components/Form/Form";
+import Font from "react-font";
 
 function BowedSringInstruments() {
   return (
     <>
 <Header />
+<Font family="Dosis">
 <div className="image__wrap1">
   <div className="image__box">
         <img className="image__bowed" src={Bowed1} alt="bowed1"></img>
@@ -39,6 +41,7 @@ function BowedSringInstruments() {
 
     
       </div>
+      </Font>
       <Form />
 </>
   );

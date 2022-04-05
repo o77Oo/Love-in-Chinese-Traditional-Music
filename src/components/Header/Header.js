@@ -2,18 +2,22 @@ import "./Header.scss";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.jpeg";
+import React from 'react'
+import Font, {Text} from 'react-font';
 
 function Header() {
   return (
     <header className="header">
       <div className="header__container">
+      <Font family='Source Code Pro'>
         <div className="header__box">
+       
           <Link to="/">
             <img className="header__logo" src={logo} alt="main" />
           </Link>
           ZI DE STUDIO
         </div>
-
+</Font>
         <Navbar />
       </div>
     </header>

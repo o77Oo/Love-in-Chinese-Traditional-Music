@@ -4,7 +4,7 @@
 .wrap {
     @include desktop {
       width: 100%;
-      @include display-flex(row, left, center);
+      @include display-flex(row, left, flex-start);
     }
   
     &__left {
