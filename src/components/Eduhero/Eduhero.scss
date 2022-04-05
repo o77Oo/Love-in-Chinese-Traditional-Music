@@ -1,58 +1,66 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
-.education .front{
- background-image: url(../../assets/images/hero.jpeg);
- width: 80%;
- margin: 0 8rem 16rem 8rem;
- background-size: cover;
-} 
 .front {
-  color: #323232;
-  font-weight: 600;
-  font-size: 1rem;
-  background-size: cover;
-
-  height: 30vh;
+  background-image: url(../../assets/images/hero.jpeg);
   width: 100%;
-  padding-bottom: 30vh;
-  @include display-flex(column, center, center);
+  min-width: 768px;
+  height: 55vh;
+  margin-bottom: 8rem;
+  background-size: cover;
   @include tablet {
-   
-    height: 50vh;
-    max-height: 60vh;
+    width: 80%;
+    height: 80vh;
+    margin: 0 10% 8rem 10%;
   }
   @include desktop {
-  
+    max-width: 1280px;
+    width: 80%;
+    height: 90vh;
+    margin: 0 10% 8rem 10%;
   }
-  &__title {
+  @include display-flex(column, top, center);
+    &__title {
     color:  rgb(109, 69, 69);
     font-size: 1.5rem;
-    padding-left: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    @include tablet {
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+    @include desktop {
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+    }
   }
-  &__header {
+    &__header {
     font-weight: 500;
     font-size: 1.5rem;
      color:  rgb(109, 69, 69);
-    margin-top: 2rem;
-    padding-left: 6rem;
-    width: 80%;
-
-    margin-left: 16px;
+     padding-bottom: 1rem;
+    @include display-flex(column, top, center);
+   
     @include tablet {
-      margin-left: 24px;
+     
+      padding-bottom: 2rem;
     }
     @include desktop {
-      margin-left: 130px;
+     
+      padding-bottom: 2rem;
     }
   }
-  &__button{
-    margin-left: 6rem;
+    &__button{
+  
     font-size: 1rem;
     font-weight: 600;
     color:  rgb(109, 69, 69);
     &:hover{
       background-color:rgb(163, 122, 122);
-      color: white;
+      color:$CTA-color;
     }
   }
 }
+
+
+
+

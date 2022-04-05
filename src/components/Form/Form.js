@@ -78,12 +78,11 @@ class Form extends Component {
       return <Redirect to="/" />;
     }
     return (
-      <div className="form__wrap">
+      <div className="form__wrap" id="info">
         <Font family='Bebas Neue'>
         <div className="form__titlebox">
-          <h2 className="form__subtitle">resquest</h2>
-          <h2 className="form__subtitle1"> more</h2>
-          <h2 className="form__subtitle2"> Information</h2>
+          <h2 className="form__subtitle">{this.props.title}</h2>
+        
           
         </div>
         </Font>
@@ -95,6 +94,7 @@ class Form extends Component {
         </div>
         </Font>
         <form className="form__format" onSubmit={this.handleSubmit}>
+         <div className="form__box1">
           <div className="form__left">
             <input
               id="title"
@@ -175,11 +175,14 @@ class Form extends Component {
               onChange={this.handleChange}
             />
           </div>
+          </div>
+          <Font family="Courgette">
           <div className="form__box">
-            <button className="form__button" type="submit">
+            <button className="form__button1" type="submit">
               SUBMIT
             </button>
           </div>
+          </Font>
         </form>
       </div>
     );

@@ -42,7 +42,7 @@ function BowedSringInstruments() {
     
       </div>
       </Font>
-      <Form />
+      <Form title="REQUEST MORE INFORMATION"/>
 </>
   );
 }

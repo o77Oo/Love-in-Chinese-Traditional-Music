@@ -4,6 +4,10 @@
 
 .sidebar {
     margin: 0 24px 24px 24px;
+    @include tablet{
+      width: 100%;
+      margin-left: 5rem;
+    }
     @include desktop {
       margin-right: 1rem;
       margin-left: 24px;

@@ -10,8 +10,6 @@ function Comments(props) {
         <h2 className="comments__title"> COMMENTS</h2>
        
         <div className="comments__container">
-          <div className="comments__wrap"></div>
-
           <form
             className="form"
             onSubmit={(event) => {
@@ -19,14 +17,14 @@ function Comments(props) {
             }}
           >
             <input
-              className="form__comment"
+              className="form__name"
               name="name"
-              placeholder="  ADD YOUR NAME"
+              placeholder="ADD YOUR NAME"
             />
             <textarea
               className="form__comment"
               name="comment"
-              placeholder="  ADD YOUR COMMENT"
+              placeholder="ADD YOUR COMMENT"
             ></textarea>
             <button type="submit" className="form__button" alt="plus">
               COMMENT

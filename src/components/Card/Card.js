@@ -11,36 +11,44 @@ function Card() {
     <>
       <Header />
       <div className="cards__box">
-
         <div className="cards__container">
           <div className="cards__wrapper">
-            <h2 className="cards__title">WIND </h2>
-            <img className="cards__img" src={Wind} alt="instrument" />
-            <Link to="/orchestra/wind">
-            <Button />
+            <h2 className="cards__title">PLUCKEDSTRING </h2>
+            <Link className="cards__link" to="/orchestra/pluckedstring">
+              <img
+                className="cards__img"
+                src={PluckedString}
+                alt="instrument"
+              />
+
+              <Button />
             </Link>
           </div>
+
           <div className="cards__wrapper">
             <h2 className="cards__title">BOWEDSTRING </h2>
-            <img className="cards__img" src={BowedString} alt="instrument" />
-            <Link to="/orchestra/bowedstring">
-            <Button />
+            <Link className="cards__link" to="/orchestra/bowedstring">
+              <img className="cards__img" src={BowedString} alt="instrument" />
+
+              <Button />
             </Link>
           </div>
         </div>
         <div className="cards__container1">
           <div className="cards__wrapper">
             <h2 className="cards__title">PERCUSSION </h2>
-            <img className="cards__img" src={Percussion} alt="instrument" />
-            <Link to="/orchestra/percussion">
-            <Button />
+            <Link className="cards__link"to="/orchestra/percussion">
+              <img className="cards__img" src={Percussion} alt="instrument" />
+
+              <Button />
             </Link>
           </div>
           <div className="cards__wrapper">
-            <h2 className="cards__title">PLUCKEDSTRING </h2>
-            <img className="cards__img" src={PluckedString} alt="instrument" />
-            <Link to="/orchestra/pluckedstring">
-            <Button />
+            <h2 className="cards__title">WIND </h2>
+            <Link className="cards__link"to="/orchestra/wind">
+              <img className="cards__img" src={Wind} alt="instrument" />
+
+              <Button />
             </Link>
           </div>
         </div>

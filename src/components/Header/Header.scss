@@ -22,12 +22,16 @@
     color:#3f3d3d;
     @include display-flex(column, center, center);
   }
+  &__navbox {
+    width: 100%;
+    border-top: 1px solid lightgrey;
+    margin-top: 32px;
+  }
 }
 .navbar {
-  border-top: 1px solid lightgrey;
-  margin-top: 16px;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  // border-top: 1px solid lightgrey;
+  margin: 16px auto;
+  padding: 26px 0 26px 16px;
   width: 100%;
   max-width: 800px;
    
@@ -43,6 +47,8 @@
     display:block;
     transition-duration: 1s ;
     padding-top: 8px;
+    text-align: center;
+    position: relative;
     &:hover {
       color: #323232;
       background-color: rgb(238, 238, 238);
@@ -54,9 +60,10 @@
 .dropdown {
   color: rgb(107, 98, 98);
   position:absolute;
-  background-color: translucent;
+  background-color: rgba(255,255,255,0.9);
   &:hover{
  
+    width: 100%;
   }
 }
 .dropbtn {

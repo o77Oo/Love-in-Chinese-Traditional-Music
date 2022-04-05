@@ -5,7 +5,8 @@ function Hero(props) {
   return (
     <div className="hero">
       <div className="hero__wrap">
-        <iframe  height="500rem"
+        <iframe
+          height="500rem"
           className="hero__video"
           src={`${props.selectedVideo.video}`}
         ></iframe>
