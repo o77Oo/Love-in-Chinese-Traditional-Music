@@ -11,7 +11,7 @@ import Plucked8 from "../../assets/images/8.jpeg";
 import Form from "../../components/Form/Form";
 import Font from "react-font";
 
-function PluckedInstruments() {
+function PluckedInstruments(props) {
   return (
     <>
       <Header />
@@ -186,7 +186,7 @@ function PluckedInstruments() {
           <img className="image__plucked" src={Plucked6} alt="plucked6"></img>
         </div>
       </Font>
-      <Form />
+      <Form title="REQUEST MORE INFORMATION"/>
     </>
   );
 }

@@ -18,20 +18,20 @@
     &__wrap{
         @include display-flex (row, center,center);
         gap:3rem;
-        margin:0 8rem;
+        margin:0 6rem;
     }
     &__wrap1{
-        // @include display-flex (column, left,center);
+
         @include display-flex (column, center,center);
         gap:3rem;
-        margin: 0 10rem;
+        margin: 0 6rem;
     }
   
     &__contentbox{
         font-size: 1.1rem;
-        padding-left: 3rem;
+        padding-left: 2rem;
        gap:16px;
-        height: 400px;
+        height: 450px;
         @include display-flex (column, center,center);
         background-color: #fff0d5;
     }

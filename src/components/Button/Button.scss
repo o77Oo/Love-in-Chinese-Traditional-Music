@@ -1,4 +1,5 @@
-
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
 
 .button {
     padding: 8px 16px;
@@ -11,12 +12,12 @@
     border-radius: 25px;
     text-decoration: none;
     position: absolute;
-   background-color: rgb(229, 235, 224);
-  
+    background-color: $CTA-color;
+    color: rgb(109, 107, 107);
   }
   
   .button:hover {
-
-    background-color:#d4e6d0
+    background-color: $CTA-hover;
+    color: white;
   }
   

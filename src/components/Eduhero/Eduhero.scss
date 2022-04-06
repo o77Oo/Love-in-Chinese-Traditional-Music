@@ -24,13 +24,14 @@
     font-size: 1.5rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
+    font-weight: 700;
     @include tablet {
       padding-top: 3rem;
       padding-bottom: 2rem;
     }
     @include desktop {
       padding-top: 5rem;
-      padding-bottom: 3rem;
+      padding-bottom: 1rem;
     }
   }
     &__header {
@@ -42,18 +43,22 @@
    
     @include tablet {
      
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
     }
     @include desktop {
      
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
     }
   }
     &__button{
   
+  height: 2rem;
+  border-radius: 12px;
     font-size: 1rem;
     font-weight: 600;
-    color:  rgb(109, 69, 69);
+    color: white;
+    border:none;
+    background-color: #b6b5b5;
     &:hover{
       background-color:rgb(163, 122, 122);
       color:$CTA-color;

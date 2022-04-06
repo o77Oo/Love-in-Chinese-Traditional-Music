@@ -3,7 +3,7 @@ import React from "react";
 import { Component } from "react";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
-import Font, {Text} from 'react-font';
+import Font from 'react-font';
 
 
 class Form extends Component {
@@ -59,13 +59,14 @@ class Form extends Component {
           province: this.state.province,
         })
         .then((response) => {
-          alert("Upload successfully");
+          alert("submitted successfully");
           this.setState({ formSubmited: true });
         })
 
         .catch((error) => {
           console.log(error);
         });
+
 
       event.target.reset();
     } else {

@@ -7,6 +7,7 @@ import Comments from "../../components/Comments/Comments";
 import SideBar from "../../components/SideBar/SideBar";
 import Hero from "../../components/Hero/Hero";
 import Main from "../../components/Main/Main";
+import Form from "../../components/Form/Form";
 
 class Music extends Component {
   state = {
@@ -103,6 +104,9 @@ render = () => {
           <Hero selectedVideo={this.state.selectedVideo} />
           <Main selectedVideo={this.state.selectedVideo} />
           <Comments selectedVideo={this.state.selectedVideo} createComment={this.createComment}/>
+          <div className="wrap__bottom">
+          <Form title="PURCHASE ALBUM"/>
+          </div>
         </div>
         <div className="wrap__right">
           <SideBar
@@ -110,6 +114,7 @@ render = () => {
             selectedVideo={this.state.selectedVideo}
           />
         </div>
+       
       </div>
     </>
   );

@@ -8,16 +8,13 @@
     @include tablet {
       width: 85%;
       margin-left: 5rem;
-  
     }
     @include desktop {
-      width: 83%;
+      width: 80%;
       margin-left: 8rem;
-      padding-right: 3rem;
     }
   }
   &__video {
     width: 100%;
- 
   }
 }
