@@ -96,14 +96,15 @@ function PluckedInstruments(props) {
               </p>
             </div>
           </div>
-          <img className="image__plucked" src={Plucked2} alt="plucked2"></img>
+
+          <img className="image__plucked" src={Plucked4} alt="plucked4"></img>
+
           <img className="image__plucked" src={Plucked3} alt="plucked3"></img>
         </div>
 
         <div className="image__wrap">
           <img className="image__plucked" src={Plucked7} alt="plucked7"></img>
-
-          <img className="image__plucked" src={Plucked4} alt="plucked4"></img>
+          <img className="image__plucked" src={Plucked2} alt="plucked2"></img>
 
           <div className="image__contentbox">
             <h2 className="image__title"> Ruan (阮)</h2>
@@ -186,7 +187,7 @@ function PluckedInstruments(props) {
           <img className="image__plucked" src={Plucked6} alt="plucked6"></img>
         </div>
       </Font>
-      <Form title="REQUEST MORE INFORMATION"/>
+      <Form title="REQUEST MORE INFORMATION" />
     </>
   );
 }

@@ -14,7 +14,7 @@ function Header() {
             <Link to="/">
               <img className="header__logo" src={logo} alt="main" />
             </Link>
-            ZI DE STUDIO
+            ZIDE STUDIO
           </div>
         </Font>
         <div className="header__navbox">

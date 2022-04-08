@@ -18,13 +18,13 @@
     &__wrap{
         @include display-flex (row, center,center);
         gap:3rem;
-        margin:0 6rem;
+        margin:0 6rem 3rem 6rem;
     }
     &__wrap1{
 
         @include display-flex (column, center,center);
         gap:3rem;
-        margin: 0 6rem;
+        margin: 0 6rem 2rem 6rem;
     }
   
     &__contentbox{

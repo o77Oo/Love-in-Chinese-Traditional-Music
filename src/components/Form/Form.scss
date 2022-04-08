@@ -74,5 +74,29 @@
       margin-right: 24px;
     }
   }
+  &__success {
+    background-color: #fcf5f5;
+    height: 50vh;
+    text-align: center;
+  }
+}
+
+.warning {
+ 
+    display: flex;
+    align-items: center;
+justify-content: center;
+    height: 1.25rem;
+    margin: 0 0 1%;
+
+    &__icon {
+      width: 0.9rem;
+      height: 0.9rem;
+      margin: 0 1.5% 0 0;
+    }
+
+    &__text {
+color: red;
+    }
   
 }
