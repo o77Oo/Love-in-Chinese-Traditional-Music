@@ -1,0 +1,92 @@
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables" as *;
+
+.plucked {
+  @include display-flex(column, center, center);
+  gap: 5rem;
+  &__pluck {
+    height: 35rem;
+    width: 20rem;
+    @include tablet {
+      gap: 5rem;
+    }
+    @include desktop {
+      height: 28rem;
+      width: 16rem;
+      gap: 3rem;
+    }
+  }
+  &__img {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      @include display-flex(row, center, center);
+      gap:3rem;
+    }
+  }
+  &__wrap {
+    @include display-flex(column, center, center);
+    @include desktop {
+      @include display-flex(row, center, center);
+      gap: 3rem;
+      margin: 0 3rem 2rem 3rem;
+    }
+  }
+ 
+  &__contentbox1 {
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    gap: 16px;
+    height: 450px;
+    background-color: #fff0d5;
+    @include display-flex(column, center, center);
+    @include tablet {
+      margin: 2rem 2rem;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__contentbox {
+    display: none;
+
+    @include desktop {
+      font-size: 1.1rem;
+      padding-left: 2rem;
+      gap: 16px;
+      height: 450px;
+      background-color: #fff0d5;
+      @include display-flex(column, center, center);
+    }
+  }
+  &__contentbox2 {
+    @include display-flex(column, center, center);
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    gap: 16px;
+    height: 450px;
+    background-color: #fff0d5;
+    @include tablet {
+      margin: 2rem 2rem;
+    }
+    @include desktop {
+    }
+  }
+  &__content {
+    @include display-flex(column, center, center);
+    gap: 16px;
+    width: 80%;
+  }
+  &__row {
+    @include display-flex(row, left, top);
+  }
+
+  &__title {
+    font-size: 1.18rem;
+    font-weight: 600;
+  }
+  &__title1 {
+    font-weight: 600;
+  }
+}

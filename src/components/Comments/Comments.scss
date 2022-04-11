@@ -2,6 +2,7 @@
 @use "../../styles/variables" as *;
 
 .comments {
+
   margin: 3rem 1rem;
   @include tablet {
     margin-left: 5rem;
@@ -23,16 +24,16 @@
     max-width: 100%;
     margin-top: 30px;
     padding-top: 8px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-left: 5rem;
-
+    @include display-flex (column,center,center);
     @include tablet {
+      display: flex;
+      flex-direction: column;
+      position: relative;
       margin-left: 3rem;
     }
     @include desktop {
-      margin-left: 10rem;
+      margin-top:0;
+      margin-left: 0;
     }
   }
   &__image {
@@ -105,6 +106,7 @@
 }
 
 .form {
+  @include display-flex (column,center,center);
   @include tablet {
     @include display-flex(row, center, center);
     width: 80%;
@@ -129,10 +131,11 @@
       height: 45px;
       width: 25rem;
       margin-top: 0;
+      padding-top: 4px;
     }
     @include desktop {
       height: 45px;
-      width: 30rem;
+      width: 25rem;
     }
   }
 
@@ -156,26 +159,29 @@
       padding-top: 16px;
       min-width: 10rem;
     }
+    @include desktop {
+
+    }
   }
 
   &__button {
-    @include display-flex(row, left, center);
-    font-size: 20px;
+    @include display-flex(row, center, center);
+    font-size: 16px;
     background-color: $CTA-color;
     color: darkgray;
-    height: 35px;
-    width: 40%;
+    height: 25px;
+    width: 30%;
     border-radius: 8px;
     border: 1px solid $secondary-color;
-    padding: 24px 8rem 20px 20px;
-    margin: 24px 0 24px 55%;
+    padding: 16px 5rem 16px 5rem;
+    margin: 16px 0;
     font-family:GillSans-SemiBold;
     &:hover {
       background-color: $CTA-hover;
       color: white;
     }
     @include tablet {
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       font-size: 12px;
       height: 45px;
       width: 12rem;
@@ -184,7 +190,7 @@
     
     }
     @include desktop {
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       font-size: 12px;
       width: 150px;
       padding: 0 36px;

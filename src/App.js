@@ -1,13 +1,14 @@
 import React from "react";
 import Music from "./page/Music/Music";
 import Orchestra from "./page/Orchestra/Orchestra";
+import About from "./page/About/About";
+import Contact from "./page/Contact/Contact";
 import Education from "./page/Education/Education";
-import { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import WindInstruments from "./page/Orchestra/WindInstruments"
-import BowedStringInstruments from "./page/Orchestra/BowedStringInstruments"
-import PercussionInstruments from "./page/Orchestra/PercussionInstruments"
-import PluckedInstruments from "./page/Orchestra/PluckedInstruments"
+import WindInstruments from "./page/Orchestra/WindInstruments/WindInstruments"
+import BowedStringInstruments from "./page/Orchestra/BowedStringInstruments/BowedStringInstruments"
+import PercussionInstruments from "./page/Orchestra/PercussionInstruments/PercussionInstruments"
+import PluckedInstruments from "./page/Orchestra/PluckedInstruments/PluckedInstruments"
 
 
 
@@ -25,6 +26,8 @@ function App() {
             <Route path="/orchestra/percussion" component={PercussionInstruments} />
             <Route path="/orchestra/pluckedstring" component={PluckedInstruments} />
             <Route path="/education" component={Education} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </div>
       </BrowserRouter>

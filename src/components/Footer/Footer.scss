@@ -1,0 +1,26 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.footer{
+    @include display-flex(row, space-between, center);
+   padding: 1rem 1rem;
+   background-color: #e6e1e1;
+   @include tablet {
+    padding: 1rem 2rem;
+   }
+   @include desktop {
+       padding: 1rem 5rem;
+   }
+   &__left{
+    @include display-flex(row, left, center);
+    gap:0.5rem;
+    font-weight: 600;
+   }
+   &__right{
+       gap:0.5rem;
+   }
+    &__logo{
+        width: 2rem;
+        height: 2rem;
+    }
+}

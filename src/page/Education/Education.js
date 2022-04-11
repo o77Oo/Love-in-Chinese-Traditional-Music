@@ -2,6 +2,7 @@ import React from "react";
 import Form from "../../components/Form/Form";
 import Eduhero from "../../components/Eduhero/Eduhero";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import "./Education.scss";
 import Font from "react-font";
 
@@ -27,6 +28,7 @@ function Education() {
         </section>
       </Font>
       <Form title="GET A RECOMMENDATION"/>
+      <Footer />
     </div>
   );
 }

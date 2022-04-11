@@ -10,8 +10,7 @@
 
   &__container {
     padding: 36px 20px;
-    display: flex;
-    flex-direction: row;
+   
     gap: 50px;
 
     @include tablet {
@@ -21,21 +20,8 @@
     }
     @include desktop {
       margin: 0 auto;
-    }
-  }
-  &__container1 {
-    padding: 36px 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-
-    @include tablet {
-      padding: 36px 36px;
+      display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-    }
-    @include desktop {
-      margin: 0 auto;
     }
   }
   &__wrapper {

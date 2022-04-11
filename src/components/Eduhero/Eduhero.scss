@@ -3,24 +3,26 @@
 .front {
   background-image: url(../../assets/images/hero.jpeg);
   width: 100%;
-  min-width: 768px;
-  height: 55vh;
+  height: 25rem;
   margin-bottom: 8rem;
+  background-origin: content-box;
   background-size: cover;
+  background-repeat: no-repeat;
+
   @include tablet {
     width: 80%;
-    height: 80vh;
+    height: 40rem;
     margin: 0 10% 8rem 10%;
   }
   @include desktop {
     max-width: 1280px;
     width: 80%;
-    height: 90vh;
+    height: 40rem;
     margin: 0 10% 8rem 10%;
   }
   @include display-flex(column, top, center);
-    &__title {
-    color:  rgb(109, 69, 69);
+  &__title {
+    color: rgb(109, 69, 69);
     font-size: 1.5rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -34,38 +36,31 @@
       padding-bottom: 1rem;
     }
   }
-    &__header {
+  &__header {
     font-weight: 500;
     font-size: 1.5rem;
-     color:  rgb(109, 69, 69);
-     padding-bottom: 1rem;
+    color: rgb(109, 69, 69);
+    padding-bottom: 1rem;
     @include display-flex(column, top, center);
-   
+
     @include tablet {
-     
       padding-bottom: 1rem;
     }
     @include desktop {
-     
       padding-bottom: 1rem;
     }
   }
-    &__button{
-  
-  height: 2rem;
-  border-radius: 12px;
+  &__button {
+    height: 2rem;
+    border-radius: 12px;
     font-size: 1rem;
     font-weight: 600;
     color: white;
-    border:none;
+    border: none;
     background-color: #b6b5b5;
-    &:hover{
-      background-color:rgb(163, 122, 122);
-      color:$CTA-color;
+    &:hover {
+      background-color: rgb(163, 122, 122);
+      color: $CTA-color;
     }
   }
 }
-
-
-
-

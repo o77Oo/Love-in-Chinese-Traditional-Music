@@ -1,0 +1,73 @@
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables" as *;
+
+.wind {
+    &__box {
+        @include display-flex (column, center,center);
+        @include tablet {
+            @include display-flex (row, center,center);
+            gap:3rem;
+        }
+    }
+  &__wind {
+  width: 18rem;
+  height: 28rem;
+  margin-bottom: 3rem;
+    @include tablet {
+        margin-bottom: 0;
+    }
+    @include desktop {
+    
+    }
+  }
+  &__wrap {
+    @include display-flex(column, center, center);
+    gap: 3rem;
+    margin: 0 6rem 2rem 6rem;
+  }
+  &__contentbox {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff0d5;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    gap: 16px;
+@include tablet {
+    height: 28rem;
+    line-height: 0.9rem;
+}
+    @include display-flex(column, center, center);
+    @include desktop {
+      background-color: #fff0d5;
+      font-size: 1.1rem;
+      padding-left: 2rem;
+      gap: 16px;
+      height: 28rem;
+      @include display-flex(column, center, center);
+    }
+  }
+  &__content {
+    @include display-flex(column, center, center);
+    gap: 16px;
+    width: 80%;
+  }
+  &__row {
+    @include display-flex(row, left, top);
+  }
+  &__bowed {
+    height: 450px;
+    width: 350px;
+    gap: 3rem;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 1rem;
+    @include tablet {
+      font-size: 1.18rem;
+    }
+  }
+  &__title1 {
+    font-weight: 600;
+  }
+}

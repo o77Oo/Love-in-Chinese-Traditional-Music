@@ -8,6 +8,7 @@ import SideBar from "../../components/SideBar/SideBar";
 import Hero from "../../components/Hero/Hero";
 import Main from "../../components/Main/Main";
 import Form from "../../components/Form/Form";
+import Footer from "../../components/Footer/Footer"
 
 class Music extends Component {
   state = {
@@ -113,9 +114,14 @@ render = () => {
             videos={this.state.videos}
             selectedVideo={this.state.selectedVideo}
           />
+           <div className="wrap__bottom1">
+          <Form title="PURCHASE ALBUM"/>
+          </div>
+
         </div>
        
       </div>
+      <Footer />
     </>
   );
 };

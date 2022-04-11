@@ -34,7 +34,7 @@ function Card() {
             </Link>
           </div>
         </div>
-        <div className="cards__container1">
+        <div className="cards__container">
           <div className="cards__wrapper">
             <h2 className="cards__title">PERCUSSION </h2>
             <Link className="cards__link"to="/orchestra/percussion">

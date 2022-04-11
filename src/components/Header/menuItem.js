@@ -16,7 +16,6 @@ export const menuItems = [
       {
         title: "Plucked String",
         path: "/orchestra/pluckedstring",
-        
       },
       {
         title: "Bowed String",
@@ -56,10 +55,6 @@ export const menuItems = [
     title: "Contact Us",
     path: "/contact",
     submenu: [
-      {
-        title: "Career",
-        path: "/contact",
-      },
       {
         title: "Contact",
         path: "/contact",

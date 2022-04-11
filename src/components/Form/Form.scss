@@ -2,25 +2,48 @@
 @use "../../styles/variables" as *;
 
 .form {
-  &__wrap {
+  &__wrap1 {
     background-color: #fcf5f5;
     @include display-flex(column, center, center);
   }
+  @include desktop {
+    padding: 0 1rem;
+  }
   &__titlebox {
+
     @include display-flex(row, center, center);
     font-size: 1.5rem;
+  
     padding-top: 3rem;
     padding-bottom: 1.2rem;
-  }
+   
+  
+}
   &__title {
     font-family:GillSans-SemiBold;
     padding-left: 16px;
+    width: 12rem;
+    height: 2rem;
+    margin-right: 0.6rem;
+    border: 1px solid #c5afaf;
+    margin-bottom: 0.6rem;
+    margin-right: 0.6rem;
+    @include tablet{
     width: 15rem;
     height: 3rem;
     margin-bottom: 1rem;
     margin-right: 1rem;
-    border: 1px solid #c5afaf;
+  
     padding-right: 16px;
+    }
+    @include desktop {
+      padding-left: 16px;
+    width: 12rem;
+    height: 2rem;
+    margin-right: 0.6rem;
+    margin-bottom: 0.6rem;
+    margin-right: 0.6rem;
+    }
   }
   &__format {
     @include display-flex(row, center, center);
@@ -42,16 +65,16 @@
   &__button1 {
     
     text-align:center;
-    @include display-flex(row, left, center);
-    font-size: 20px;
+    @include display-flex(row, center, center);
+    font-size: 16px;
     background-color: $CTA-color;
     color: darkgray;
     height: 35px;
-    width: 40%;
+    width: 10rem;
     border-radius: 8px;
     border: 1px solid $secondary-color;
-    padding: 24px 8rem 20px 20px;
-    margin: 24px 0 24px 55%;
+   
+    margin: 24px 0;
     font-family:GillSans-SemiBold;
     &:hover {
       background-color: $CTA-hover;
@@ -62,7 +85,7 @@
       font-size: 16px;
       height: 45px;
       width: 12rem;
-     padding-left: 4.5rem;
+    
       margin-left: 0;
     
     }
@@ -70,7 +93,7 @@
       margin-bottom: 24px;
       font-size: 16px;
       width: 150px;
-     padding-left: 4.5rem;
+    
       margin-right: 24px;
     }
   }

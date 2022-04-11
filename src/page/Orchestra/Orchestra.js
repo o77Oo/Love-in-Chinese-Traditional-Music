@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "../../components/Form/Form";
 import Card from "../../components/Card/Card";
+import Footer from "../../components/Footer/Footer";
 import Font from "react-font";
 
 function Orchestra(props) {
@@ -10,6 +11,7 @@ function Orchestra(props) {
         <Card />
       </Font>
       <Form title="REQUEST MORE INFORMATION"/>
+      <Footer />
     </div>
   );
 }
