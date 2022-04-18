@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import Dropdown from "./Dropdown";
+import Dropdown from "../Dropdown/Dropdown";
 
 const MenuItems = ({ items }) => {
   const [dropdown, setDropdown] = useState(false);

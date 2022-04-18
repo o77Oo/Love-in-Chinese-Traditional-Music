@@ -19,7 +19,6 @@ class Music extends Component {
   // runs once, when the component is first mounted, fetch API data and set state when mounts
   componentDidMount() {
     this.getVideosData();
-    console.log(process.env);
   }
 
   // runs everytime the component updates, including the first time it's mounted
@@ -58,7 +57,6 @@ class Music extends Component {
       .get(`${process.env.REACT_APP_API_URL}/videos/${id}`)
       .then((response) => {
 
-        console.log(response)
         this.setState({
           selectedVideo: response.data, //set array of videos
         });
@@ -73,7 +71,6 @@ class Music extends Component {
   createComment=(event,id) => {
   event.preventDefault();
 
-  console.log(id)
   const name = event.target.name.value
   const comment = event.target.comment.value
   // check if name and message inputs have a value
