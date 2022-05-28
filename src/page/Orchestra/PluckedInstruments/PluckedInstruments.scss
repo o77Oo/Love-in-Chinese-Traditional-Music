@@ -45,6 +45,7 @@
     }
     @include desktop {
       display: none;
+      width: 50%;
     }
   }
 
@@ -52,6 +53,7 @@
     display: none;
 
     @include desktop {
+      width: 50%;
       font-size: 1.1rem;
       padding-left: 2rem;
       gap: 16px;
@@ -71,6 +73,7 @@
       margin: 2rem 2rem;
     }
     @include desktop {
+      width: 50%;
     }
   }
   &__content {
