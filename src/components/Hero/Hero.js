@@ -8,6 +8,7 @@ function Hero(props) {
         <iframe
           height="500rem"
           className="hero__video"
+          title="playing"
           src={`${props.selectedVideo.video}`}
         ></iframe>
       </div>
