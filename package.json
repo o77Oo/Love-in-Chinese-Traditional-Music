@@ -1,5 +1,5 @@
 {
-  "name": "love-chnese-traditional-music",
+  "name": "love-chinese-music",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.1",
     "formik": "^2.2.9",
-    "react": "^17.0.2",
+    "react": "^16.0.0",
     "react-dom": "^17.0.2",
     "react-font": "^1.2.1",
     "react-router-dom": "5.3",
