@@ -6,6 +6,8 @@ import Percussion from "../../assets/icons/percussion.jpeg";
 import PluckedString from "../../assets/icons/pluckedstring.jpeg";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
+import React from 'react';
+
 function Card() {
   return (
     <>
