@@ -1,6 +1,6 @@
 import { menuItems } from "./menuItem";
 import MenuItems from "./MenuItems";
-import Font, {Text} from 'react-font';
+import Font from 'react-font';
 
 const Navbar = () => {
   return (

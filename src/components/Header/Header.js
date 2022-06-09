@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.jpeg";
 import React from "react";
-import Font, { Text } from "react-font";
+import Font from "react-font";
 
 function Header() {
   return (

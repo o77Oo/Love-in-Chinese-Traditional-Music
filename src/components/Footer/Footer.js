@@ -5,7 +5,7 @@ import Facebook from "../../assets/icons/facebook.jpg";
 import Ins from "../../assets/icons/ins.jpg";
 import Youtube from "../../assets/icons/youtube.jpg";
 import React from "react";
-import Font, { Text } from "react-font";
+import Font from "react-font";
 
 function Header() {
   return (

@@ -1,5 +1,5 @@
 import "./Main.scss";
-import Font, { Text } from "react-font";
+import Font from "react-font";
 
 function Main(props) {
   return (
