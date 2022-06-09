@@ -5,6 +5,7 @@ import Form from "../../../components/Form/Form";
 import dizi from "../../../assets/images/dizi.jpg";
 import suona from "../../../assets/images/suona.jpg";
 import Font from "react-font";
+import React from 'react';
 
 function WindInstruments() {
   return (
