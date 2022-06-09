@@ -1,6 +1,7 @@
 import "./SideBar.scss";
 import { Link } from "react-router-dom";
 import Font from "react-font";
+import React from "react";
 
 function SideBar(props) {
   return (

@@ -1,5 +1,6 @@
 import "./Main.scss";
 import Font from "react-font";
+import React from "react";
 
 function Main(props) {
   return (
