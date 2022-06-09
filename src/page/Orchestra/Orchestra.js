@@ -3,6 +3,7 @@ import Form from "../../components/Form/Form";
 import Card from "../../components/Card/Card";
 import Footer from "../../components/Footer/Footer";
 import Font from "react-font";
+import React from 'react';
 
 function Orchestra(props) {
   return (

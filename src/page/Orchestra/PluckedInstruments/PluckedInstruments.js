@@ -11,6 +11,7 @@ import Plucked8 from "../../../assets/images/8.jpeg";
 import Form from "../../../components/Form/Form";
 import Footer from "../../../components/Footer/Footer";
 import Font from "react-font";
+import React from 'react';
 
 function PluckedInstruments(props) {
   return (

@@ -5,6 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 import percussion1 from "../../../assets/images/percussion1.jpeg"
 import percussion2 from "../../../assets/images/percussion2.jpeg"
 import Font from "react-font";
+import React from 'react';
 
 function PercussionInstruments() {
   return (

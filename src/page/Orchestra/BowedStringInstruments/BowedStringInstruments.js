@@ -5,6 +5,7 @@ import Bowed1 from "../../../assets//images/B1.jpeg";
 import Bowed5 from "../../../assets//images/B5.jpeg";
 import Form from "../../../components/Form/Form";
 import Font from "react-font";
+import React from 'react';
 
 function BowedSringInstruments(props) {
   return (
