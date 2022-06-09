@@ -39,7 +39,7 @@ class Music extends Component {
 
   getVideosData() {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/videos`)
+      .get(`https://love-chinese-music-api.herokuapp.com/videos`)
       .then((response) => {
         this.setState({
           videos: response.data, //set array of videos
@@ -55,7 +55,7 @@ class Music extends Component {
 
   getVideosById(id) {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/videos/${id}`)
+      .get(`https://love-chinese-music-api.herokuapp.com/videos/${id}`)
       .then((response) => {
 
         console.log(response)
@@ -79,7 +79,7 @@ class Music extends Component {
   // check if name and message inputs have a value
   if (name && comment) {
     axios
-      .post(`${process.env.REACT_APP_API_URL}/videos/${id}`, { name: name, comment: comment })
+      .post(`https://love-chinese-music-api.herokuapp.com/videos/${id}`, { name: name, comment: comment })
       .then((result) => {
         this.getVideosById(id)
       })
