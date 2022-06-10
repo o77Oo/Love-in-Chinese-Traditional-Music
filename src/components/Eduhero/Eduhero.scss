@@ -1,5 +1,5 @@
-@use "../../styles/mixins" as *;
-@use "../../styles/variables" as *;
+@import"../../styles/variables.scss";
+@import"../../styles/mixins.scss";
 .front {
   background-image: url(../../assets/images/hero.jpeg);
   width: 100%;

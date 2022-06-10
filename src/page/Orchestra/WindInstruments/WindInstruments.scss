@@ -1,13 +1,13 @@
-@use "../../../styles/mixins" as *;
-@use "../../../styles/variables" as *;
+@import"../../../styles/variables.scss";
+@import"../../../styles/mixins.scss" ;
 
 .wind {
     &__box {
-        @include display-flex (column, center,center);
+        @include display-flex (column, center, center);
         @include tablet {
-            @include display-flex (row, center,center);
+            @include display-flex (row, center, center);
             gap:3rem;
-        }
+        };
     }
   &__wind {
   width: 18rem;
@@ -15,9 +15,6 @@
   margin-bottom: 3rem;
     @include tablet {
         margin-bottom: 0;
-    }
-    @include desktop {
-    
     }
   }
   &__wrap {

@@ -144,7 +144,7 @@ class Form extends Component {
               onChange={this.handleChange}
             />
             <select
-              className="form__title"
+              className="form__title1"
               name="province"
               id="Province"
               onChange={this.handleChange}

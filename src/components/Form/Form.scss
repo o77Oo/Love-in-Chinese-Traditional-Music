@@ -1,5 +1,5 @@
-@use "../../styles/mixins" as *;
-@use "../../styles/variables" as *;
+@import"../../styles/variables.scss";
+@import"../../styles/mixins.scss";
 
 .form {
   &__wrap1 {
@@ -45,11 +45,41 @@
     margin-right: 0.6rem;
     }
   }
+  &__title1 {
+    font-family:GillSans-SemiBold;
+    padding-left: 16px;
+    width: 13.2rem;
+    height: 2.3rem;
+    margin-right: 0.6rem;
+    border: 1px solid #c5afaf;
+    margin-bottom: 0.6rem;
+    margin-right: 0.6rem;
+    @include tablet{
+    width: 17rem;
+    height: 3.3rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  
+    padding-right: 16px;
+    }
+    @include desktop {
+      padding-left: 16px;
+    width: 14.2rem;
+    height: 2.3rem;
+    margin-right: 0.6rem;
+    margin-bottom: 0.6rem;
+    margin-right: 0.6rem;
+    }
+  }
   &__format {
     @include display-flex(row, center, center);
   }
   &__left {
     @include display-flex(column, center, center);
+    @include desktop {
+      padding-left: 16px;
+    
+    }
   }
   &__right {
     @include display-flex(column, center, center);

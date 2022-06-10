@@ -1,5 +1,5 @@
-@use "../../styles/mixins" as *;
-@use "../../styles/variables" as *;
+@import"../../styles/variables.scss";
+@import"../../styles/mixins.scss";
 
 .cards {
   // margin: 4rem 2rem;
